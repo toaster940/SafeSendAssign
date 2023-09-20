@@ -1,0 +1,37 @@
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.example.reporting.ExtentReportListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="C:/Temp/safeSendAssignment/src/test/java/com/example/tests/BaseTest.java">
+        <classes>
+            <class name="com.example.tests.BaseTest">
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Temp/safeSendAssignment/src/test/java/com/example/tests/LoginPageTest.java">
+        <classes>
+            <class name="com.example.tests.LoginPageTest">
+                <methods>
+                    <include name="navigateToLoginPage"/>
+                    <include name="loginToSafeSendSuiteAccount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Temp/safeSendAssignment/src/test/java/com/example/tests/LandingPageTest.java">
+        <classes>
+            <class name="com.example.tests.LandingPageTest">
+                <methods>
+                    <include name="getCompanyNameAndExpandToggle"/>
+                    <include name="applyFilterOnDeliveredReturns"/>
+                    <include name="getFirstThreeClients"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <reporter output-directory="reports"/>
+
+</suite>
